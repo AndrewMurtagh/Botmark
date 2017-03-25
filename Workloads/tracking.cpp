@@ -4,23 +4,23 @@
 *   Copyright (C) 2017 Trinity Robotics Research Group.
 *
 *
-*   FILENAME:       haar.cpp
+*   FILENAME:       tracking.cpp
 *
 *
-*   DESCRIPTION:    program to detect faces.
+*   DESCRIPTION:    program to track object.
 *
 *
-*   DATE:           12/03/2017
+*   DATE:           25/03/2017
 *
 *
 *   AUTHOR:         Andrew Murtagh,
 *                   Trinity Robotics Research Group, Trinity College Dublin.
 *
 *
-*   NOTES:          -uses Viola-Jones algorithm to detect faces.
+*   NOTES:          -splits rgb into each plane, applies threshold on each,
+*		    -applies bitwise OR, median blur, image moments, blob centroid.
 *                   -has opencv3.2.0 as a required dependency.
-*                   -images taken from ImageNet.
-*                   -uses haarcascade_frontalface_alt.xml as detector.
+*                   -images taken from camear phone
 *                   -metric is frame rate [Hz]
 *
 *
