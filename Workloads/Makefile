@@ -13,5 +13,8 @@ prm:
 haar:
 	g++ haar.cpp -o Haar `pkg-config --cflags --libs opencv` -lrt
 
+corrnav:
+	g++ corrnav.cpp -o CorriderNavigation `pkg-config --cflags --libs opencv` -lrt
+	
 tracking:
 	g++ tracking.cpp -o ObjectTracking `pkg-config --cflags --libs opencv` -lrt
